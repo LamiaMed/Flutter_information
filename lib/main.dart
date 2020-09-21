@@ -18,24 +18,33 @@ class Myapp extends StatelessWidget {
         body: SafeArea(
                   child: Column(
                     children: <Widget>[
-                      SizedBox(
-                        height: 150.0,
-                      ),
-                      Center(
-                      child:CircleAvatar(
+                      
+                      CircleAvatar(
                         
                         radius: 50.0,
                         
                         backgroundImage: AssetImage('images/angela.jpg'),
                       ),
-                      ),
+                      
                       Text(
                         'Lamia MDJ',
                         style: TextStyle(
+                           fontFamily: 'Pacifico',
                            fontSize : 40.0,
                            color :Colors.white,
                            fontWeight : FontWeight.bold,
                         ),
+                      ),
+                      Text(
+                        'FLUTTER DEVELOPER',
+                        style: TextStyle(
+                          color: Colors.teal.shade100,
+                          fontSize: 20.0,
+                          letterSpacing: 2.5,
+                          fontFamily: 'Source Sans Pro',
+                          fontWeight: FontWeight.bold,
+                        ),
+                         
                       ),
                     ],
                   ),
