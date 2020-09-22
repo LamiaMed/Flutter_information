@@ -36,6 +36,7 @@ class Myapp extends StatelessWidget {
                         ),
                       ),
                       Text(
+
                         'FLUTTER DEVELOPER',
                         style: TextStyle(
                           color: Colors.teal.shade100,
@@ -45,6 +46,55 @@ class Myapp extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                          
+                      ),
+                      Container(
+                        margin: EdgeInsets.symmetric(vertical : 10.0, horizontal : 25.0,),
+                        padding: EdgeInsets.all(10.0),
+                        color: Colors.white,
+                        child: Row(
+                          children: <Widget>[
+                            Icon(
+                              Icons.phone,
+                              color: Colors.teal,
+                            ),
+                            SizedBox(
+                              width: 10.0,
+                            ),
+                            Text(
+                              '+ 2335 56 12 34 56',
+                              style: TextStyle(
+                                color: Colors.teal.shade900,
+                                fontSize: 20.0,
+                                fontFamily: 'Source Sans Pro', 
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container (
+                        color: Colors.white,
+                        margin: EdgeInsets.symmetric(vertical : 10.0, horizontal : 25.0,),
+                        padding: EdgeInsets.all(10.0),
+                        child: Row(
+                          children : <Widget>[
+                            Icon(
+                              Icons.mail,
+                              color: Colors.teal,
+                              
+                            ),
+                            SizedBox( width: 10.0,),
+                            Text(
+                              'youradd@google.dz',
+                              style: TextStyle(
+                                fontSize: 20.0,
+                                fontFamily: 'Source Sans Pro',
+                                color: Colors.teal.shade900,
+
+                              ),
+
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),
