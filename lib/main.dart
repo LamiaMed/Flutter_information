@@ -17,6 +17,7 @@ class Myapp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       
                       CircleAvatar(
@@ -24,8 +25,9 @@ class Myapp extends StatelessWidget {
                         radius: 50.0,
                         
                         backgroundImage: AssetImage('images/angela.jpg'),
+                        
                       ),
-                      
+                       
                       Text(
                         'Lamia MDJ',
                         style: TextStyle(
@@ -47,20 +49,25 @@ class Myapp extends StatelessWidget {
                         ),
                          
                       ),
-                      Container(
+                      SizedBox(
+                        height: 20.0,
+                        width: 150.0,
+                       child: Divider(
+                           color: Colors.teal.shade100,
+                       ),
+                      ),
+                      Card(
                         margin: EdgeInsets.symmetric(vertical : 10.0, horizontal : 25.0,),
-                        padding: EdgeInsets.all(10.0),
-                        color: Colors.white,
-                        child: Row(
-                          children: <Widget>[
+                       
+                        
+                        child: ListTile(
+                         leading:
                             Icon(
                               Icons.phone,
                               color: Colors.teal,
                             ),
-                            SizedBox(
-                              width: 10.0,
-                            ),
-                            Text(
+                   
+                            title : Text(
                               '+ 2335 56 12 34 56',
                               style: TextStyle(
                                 color: Colors.teal.shade900,
@@ -68,32 +75,30 @@ class Myapp extends StatelessWidget {
                                 fontFamily: 'Source Sans Pro', 
                               ),
                             ),
-                          ],
+                          
                         ),
                       ),
-                      Container (
-                        color: Colors.white,
+                      
+                      Card (
+                       
                         margin: EdgeInsets.symmetric(vertical : 10.0, horizontal : 25.0,),
-                        padding: EdgeInsets.all(10.0),
-                        child: Row(
-                          children : <Widget>[
-                            Icon(
-                              Icons.mail,
-                              color: Colors.teal,
-                              
-                            ),
-                            SizedBox( width: 10.0,),
-                            Text(
-                              'youradd@google.dz',
-                              style: TextStyle(
-                                fontSize: 20.0,
-                                fontFamily: 'Source Sans Pro',
-                                color: Colors.teal.shade900,
+                        
+                        child: ListTile(
+                          leading: Icon(
+                                Icons.mail,
+                                color: Colors.teal,
+                                
+                              ),
+                          title: Text(
+                                'youradd@google.dz',
+                                style: TextStyle(
+                                  fontSize: 20.0,
+                                  fontFamily: 'Source Sans Pro',
+                                  color: Colors.teal.shade900,
+
+                                ),
 
                               ),
-
-                            ),
-                          ],
                         ),
                       ),
                     ],
@@ -103,4 +108,3 @@ class Myapp extends StatelessWidget {
     );
   }
 }
-
